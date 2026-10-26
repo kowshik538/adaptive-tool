@@ -33,20 +33,12 @@ export default function Navbar({ activeTab, setActiveTab, currentUser, setCurren
           
           {/* Logo & Platform Title */}
           <div className="flex items-center space-x-2.5 cursor-pointer shrink-0" onClick={() => setActiveTab('dashboard')}>
-            <div className="w-9 h-9 rounded-xl bg-gradient-to-tr from-sky-600 to-indigo-600 flex items-center justify-center shadow-md shadow-sky-500/20 shrink-0">
-              <ShieldCheck className="w-5 h-5 text-white" />
+            <div className="w-8 h-8 rounded-lg bg-gradient-to-tr from-sky-600 to-indigo-600 flex items-center justify-center shadow-md shadow-sky-500/20 shrink-0">
+              <ShieldCheck className="w-4.5 h-4.5 text-white" />
             </div>
-            <div className="shrink-0">
-              <div className="flex items-center space-x-1.5 flex-nowrap">
-                <span className="font-bold text-base tracking-tight bg-gradient-to-r from-white via-sky-100 to-sky-400 bg-clip-text text-transparent whitespace-nowrap">
-                  Adaptive Tool Scoping
-                </span>
-                <span className="text-[10px] px-1.5 py-0.5 rounded-full bg-sky-500/20 text-sky-400 font-mono border border-sky-500/30 whitespace-nowrap">
-                  Model-Scale
-                </span>
-              </div>
-              <p className="text-[10px] text-slate-400 font-medium whitespace-nowrap hidden sm:block">Least-Privilege Enforcement for AI Function Calling</p>
-            </div>
+            <span className="font-bold text-sm sm:text-base tracking-tight bg-gradient-to-r from-white via-sky-100 to-sky-400 bg-clip-text text-transparent whitespace-nowrap">
+              Adaptive Tool
+            </span>
           </div>
 
           {/* Navigation Links */}
